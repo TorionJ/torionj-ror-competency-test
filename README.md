@@ -1,4 +1,4 @@
-# README
+# Competency Test
 
 ## Setup
 
