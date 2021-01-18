@@ -12,8 +12,6 @@ editor_user2 = User.create!(email: 'editor_user2@gmail.com', password: 'password
 admin_user = User.create!(email: 'admin_user@gmail.com', password: 'password', password_confirmation: 'password', roles: :admin)
 
 puts '*** Creating Articles ***'
-Article.create!(title: 'GO PACK GO', category: 'Sports', content: 'Heading to the NFC championship', user_id: editor_user.id)
-Article.create!(title: 'WHO DAT', category: 'Sports', content: 'Drew Brees to retire??!', user_id: editor_user.id)
 Article.create!(title: 'Chiefs Kingdom', category: 'Sports', content: 'Patrick Mahomes II out with an concussion', user_id: editor_user2.id)
 Article.create!(title: 'Pizza Toppings', category: 'Food', content: 'pepperoni, sausage, and beef', user_id: editor_user.id)
 Article.create!(title: 'Taco Tuesday', category: 'Food', content: 'All you can eat tacos. What more can you want?', user_id: editor_user2.id)
