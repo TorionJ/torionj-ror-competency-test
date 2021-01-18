@@ -1,0 +1,34 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+article_one:
+  title: WHO DAT
+  content: Saint fan!
+  category: Sports
+  user: editor_one
+  created_at: <%= 2.weeks.ago %>
+
+article_two:
+  title: Super spicy
+  content: I love spicy food
+  category: Food
+  user: editor_two
+
+article_three:
+  title: GO PACK GO
+  content: Going the the NFC Championship game
+  category: Sports
+  user: editor_one
+  created_at: <%= 2.days.ago %>
+
+article_four:
+  title: Bell bottom jeans
+  content: Are they back in style???
+  category: Fashion
+  user: editor_two
+
+article_five:
+  title: Cheifs Kingdom
+  content: Going the the AFC Championship game
+  category: Sports
+  user: editor_one
+  created_at: <%= 1.day.ago %>

@@ -1,0 +1,23 @@
+<br/>
+<caption>List of Users</caption>
+
+<table class="table table-dark table-hover">
+  <tr>
+    <th>User</th>
+    <th>Role</th>
+    <th class="vertical-align-middle" colspan="2">Admin Actions</th>
+  </tr>
+
+  <% @users.each do |user| %>
+    <tr>
+      <td><%= user.email %></td>
+      <td><%= user.role %></td>
+      <td><%= link_to 'Show', admin_user_path(user) %></td>
+      <td><%= link_to 'Edit', edit_admin_user_path(user) %></td>
+    </tr>
+  <% end %>
+</table>
+
+<br>
+
+<%= button_to 'New User', new_admin_user_path, method: :get, class: "btn btn-outline-dark" %>

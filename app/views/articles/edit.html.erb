@@ -1,0 +1,5 @@
+<h1>Editing Article</h1>
+
+<%= form_with(model: @article, local: true) do |form| %>
+  <%= render partial: 'form', locals: { article: @article, form: form } %>
+<% end %>

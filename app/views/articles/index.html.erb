@@ -1,0 +1,9 @@
+<h1 class="text-center">Articles</h1>
+<br/>
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <% @articles.each do |article| %>
+      <%= render partial: 'layouts/card_format', locals: { article: article } %>
+    <% end %>
+  </div>
+</div>

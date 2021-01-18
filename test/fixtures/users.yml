@@ -1,0 +1,19 @@
+vanilla_user:
+  roles: user
+  email: user@gmail.com
+  encrypted_password: <%= Devise::Encryptor.digest(User, 'password') %>
+
+editor_one:
+  roles: editor
+  email: editor@gmail.com
+  encrypted_password: <%= Devise::Encryptor.digest(User, 'password') %>
+
+editor_two:
+  roles: editor
+  email: editor2@gmail.com
+  encrypted_password: <%= Devise::Encryptor.digest(User, 'password') %>
+
+admin_user:
+  roles: admin
+  email: admin2@gmail.com
+  encrypted_password: <%= Devise::Encryptor.digest(User, 'password') %>

@@ -1,0 +1,13 @@
+<div class="card" style="width: 18rem;">
+    <div class="card-header">
+        User
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">email: <%= @user.email %></li>
+        <li class="list-group-item">role: <%= @user.role %></li>
+    </ul>
+</div>
+<div class="d-grid gap-2 d-md-flex justify-content-md-left">
+    <%= button_to 'Edit', edit_admin_user_path(@user), method: :get, class: "btn btn-outline-warning" %>
+    <%= button_to 'Back', admin_users_path, method: :get, class: "btn btn-outline-dark" %>
+</div>
